@@ -1,0 +1,80 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+        env:
+          # Set the base path for GitHub Pages, if needed.
+          # For example, if your repo is 'my-repo', this might need to be '/my-repo/'.
+          # By default, we use '/' which works for custom domains or root sites.
+          # Update this variable or rely on the default if appropriate.
+          BASE_PATH: /${{ github.event.repository.name }}/
+
+      - name: Move files (fix subfolder)
+        run: |
+          # Move the contents of the subfolder (e.g. build/client/repo-name) to build/client
+          # React Router v7 prerender creates the folder structure matching the base path.
+          # GitHub Pages artifact upload expects the site root at the artifact root.
+          SITE_ROOT=build/client
+          SUBFOLDER=$SITE_ROOT${{ env.BASE_PATH }}
+
+          if [ -d "$SUBFOLDER" ]; then
+            echo "Moving content from $SUBFOLDER to $SITE_ROOT"
+            rsync -av $SUBFOLDER/ $SITE_ROOT/
+            rm -rf $SUBFOLDER
+          else
+             echo "Subfolder $SUBFOLDER not found, skipping move."
+          fi
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+
+      - name: Create 404.html for GitHub Pages
+        run: cp ./build/client/index.html ./build/client/404.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build/client
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
