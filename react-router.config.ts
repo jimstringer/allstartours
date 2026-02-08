@@ -7,6 +7,6 @@ export default {
   routeDiscovery: { mode: 'initial' },
   ssr: true,
   prerender() {
-    return ['/', '/about'];
+    return ['/', '/book', '/about'];
   },
 } satisfies Config;
