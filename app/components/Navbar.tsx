@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 //import { Button } from '@/components/Button';
 import { NavLink } from '@/components/NavLink';
-// In VITE, you can import SVGs as React components using the ?react suffix for better performance. 
+// In VITE, you can import SVGs as React components using the ?react suffix for better performance.
 // Uncomment the line below to use the GitHub icon in your navbar.
 //import IconGitHub from '@/assets/github.svg?react';
 
