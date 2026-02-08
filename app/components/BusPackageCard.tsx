@@ -16,7 +16,7 @@ export const BusPackageCard = () => {
   const navigate = useNavigate();
 
   const handleBookNow = () => {
-    navigate('/about');
+    navigate('/book');
   };
 
   return (
