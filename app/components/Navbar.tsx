@@ -16,6 +16,7 @@ export const Navbar = () => {
       </Link>
       <nav className="flex items-center gap-4 font-medium md:gap-8">
         <NavLink to="/">Home</NavLink>
+        <NavLink to="/book">Book</NavLink>
         <NavLink to="/about">About</NavLink>
       </nav>
     </header>
