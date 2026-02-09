@@ -14,14 +14,14 @@ export default function HomePage() {
   return (
     <Container className="max-w-3xl text-center">
       <h2>
-        Labour <span className="text-primary">Day</span> Classic
+        Labour <span className="">Day</span> Classic
       </h2>
       <p>
-        <span className="inline-block bg-[#9B8449] p-4 text-lg font-bold text-[#1D3D7A]">
+        <span className="bg-bomber-gold text-bomber-blue inline-block p-4 text-lg font-bold">
           WINNIPEG BLUE BOMBERS
         </span>{' '}
         vs.{' '}
-        <span className="inline-block bg-[#005b3b] p-4 text-lg font-bold text-white">
+        <span className="bg-sask-green inline-block p-4 text-lg font-bold text-white">
           SASKATCHEWAN ROUGHRIDERS
         </span>
       </p>

@@ -4,11 +4,10 @@ const busPackage = {
   dualRoom: 500,
   quadRoom: 450,
   include: [
-    '50 Page Unlock',
-    '10 GB Storage',
-    '6 Team Members',
-    'Unlimited Book Mark',
-    'Unlimited basic feature',
+    '2 nights hotel accommodation',
+    'game ticket',
+    'round trip bus transportation',
+    'game day shuttle service',
   ],
 };
 
@@ -36,8 +35,7 @@ export const BusPackageCard = () => {
         </h3>
       </div>
       <div className="mt-6">
-        <h4 className="mb-1 text-xl font-semibold">Include</h4>
-        <p className="text-sm text-gray-500">Everything you get in this plan</p>
+        <h4 className="mb-1 text-xl font-semibold">Includes</h4>
         <ul className="mt-6 space-y-4">
           {busPackage.include.map((item, index) => (
             <li key={index} className="flex items-center text-sm text-gray-500">

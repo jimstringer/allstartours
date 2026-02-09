@@ -3,13 +3,7 @@ import { useNavigate } from 'react-router';
 const udrivePackage = {
   dualRoom: 430,
   quadRoom: 400,
-  include: [
-    '50 Page Unlock',
-    '10 GB Storage',
-    '6 Team Members',
-    'Unlimited Book Mark',
-    'Unlimited basic feature',
-  ],
+  include: ['2 nights hotel accommodation', 'game ticket', 'game day shuttle service'],
 };
 
 export const UdrivePackageCard = () => {
@@ -36,8 +30,7 @@ export const UdrivePackageCard = () => {
         </h3>
       </div>
       <div className="mt-6">
-        <h4 className="mb-1 text-xl font-semibold">Include</h4>
-        <p className="text-sm text-gray-500">Everything you get in this plan</p>
+        <h4 className="mb-1 text-xl font-semibold">Includes</h4>
         <ul className="mt-6 space-y-4">
           {udrivePackage.include.map((item, index) => (
             <li key={index} className="flex items-center text-sm text-gray-500">

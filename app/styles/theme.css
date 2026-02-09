@@ -15,4 +15,8 @@
   --color-white: #f5fbff;
   --color-success: var(--color-green-400);
   --color-error: var(--color-red-400);
+
+  --color-bomber-blue: #1d3d7a;
+  --color-bomber-gold: #9b8449;
+  --color-sask-green: #005b3b;
 }
