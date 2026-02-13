@@ -1,4 +1,10 @@
 import { Container } from "@/components/Container";
+import type { Route } from './+types/book';
+
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: 'Book' }, { name: 'description', content: 'Book your tour' }];
+}
 
 export default function Book() {
   return (

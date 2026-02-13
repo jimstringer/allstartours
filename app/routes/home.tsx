@@ -5,7 +5,7 @@ import { UdrivePackageCard } from '@/components/UdrivePackageCard';
 import { labourDay } from '@/constants/constants';
 
 export function meta({}: Route.MetaArgs) {
-  return [{ title: 'Home' }, { name: 'description', content: 'Welcome to All Star Tours!' }];
+  return [{ title: 'All Star Tours' }, { name: 'description', content: 'Welcome to All Star Tours!' }];
 }
 
 const labourDayDate = new Date(labourDay.year, labourDay.month - 1, labourDay.day);

@@ -2,7 +2,7 @@ import type { Route } from './+types/about';
 import { Container } from '@/components/Container';
 
 export function meta({}: Route.MetaArgs) {
-  return [{ title: 'About' }, { name: 'description', content: 'Learn more about the tech stack' }];
+  return [{ title: 'About' }, { name: 'description', content: 'About All Star Tours' }];
 }
 
 export default function AboutPage() {
