@@ -1,15 +1,5 @@
 import { useNavigate } from 'react-router';
-
-const busPackage = {
-  dualRoom: 500,
-  quadRoom: 450,
-  include: [
-    '2 nights hotel accommodation',
-    'game ticket',
-    'round trip bus transportation',
-    'game day shuttle service',
-  ],
-};
+import { busPackage } from '@/constants/constants';
 
 export const BusPackageCard = () => {
   const navigate = useNavigate();

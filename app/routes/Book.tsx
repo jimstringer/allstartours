@@ -1,6 +1,8 @@
+import { Container } from "@/components/Container";
+
 export default function Book() {
   return (
-    <div className="max-w-3xl text-center">
+    <Container className="max-w-3xl text-center">
       <p>Booking page coming soon!</p>
       <p>
         In the meantime, please email us at{' '}
@@ -8,6 +10,6 @@ export default function Book() {
           info@example.com
         </a>
       </p>
-    </div>
+    </Container>
   );
 }

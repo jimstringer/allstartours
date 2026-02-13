@@ -1,10 +1,5 @@
 import { useNavigate } from 'react-router';
-
-const udrivePackage = {
-  dualRoom: 430,
-  quadRoom: 400,
-  include: ['2 nights hotel accommodation', 'game ticket', 'game day shuttle service'],
-};
+import { udrivePackage } from '@/constants/constants';
 
 export const UdrivePackageCard = () => {
   const navigate = useNavigate();
