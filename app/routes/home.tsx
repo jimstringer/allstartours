@@ -5,7 +5,10 @@ import { UdrivePackageCard } from '@/components/UdrivePackageCard';
 import { labourDay } from '@/constants/constants';
 
 export function meta({}: Route.MetaArgs) {
-  return [{ title: 'All Star Tours' }, { name: 'description', content: 'Welcome to All Star Tours!' }];
+  return [
+    { title: 'All Star Tours' },
+    { name: 'description', content: 'Welcome to All Star Tours!' },
+  ];
 }
 
 const labourDayDate = new Date(labourDay.year, labourDay.month - 1, labourDay.day);
@@ -17,11 +20,11 @@ export default function HomePage() {
         Labour <span className="">Day</span> Classic
       </h2>
       <div>
-        <div className="bg-bomber-gold text-bomber-blue md:inline-block p-4 text-lg font-bold">
+        <div className="bg-bomber-gold text-bomber-blue p-4 text-lg font-bold md:inline-block">
           WINNIPEG BLUE BOMBERS
         </div>
-        <div className="p-2 md:inline-block md:p-4 text-lg font-bold">vs.</div>
-        <div className="bg-sask-green md:inline-block p-4 text-lg font-bold text-white">
+        <div className="p-2 text-lg font-bold md:inline-block md:p-4">vs.</div>
+        <div className="bg-sask-green p-4 text-lg font-bold text-white md:inline-block">
           SASKATCHEWAN ROUGHRIDERS
         </div>
       </div>
@@ -34,10 +37,10 @@ export default function HomePage() {
         | Mosaic Stadium, Regina, SK
       </p>
       <p>Visit Mosaic Stadium on Labour Day for an unforgettable experience!</p>
-      <div className="font-[sans-serif] text-[#eb8119]">
+      <div className="font-[sans-serif] text-primary">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
-            <h2 className="mb-4 text-4xl font-bold">{ labourDayDate.getFullYear() } Pricing</h2>
+            <h2 className="mb-4 text-4xl font-bold">{labourDayDate.getFullYear()} Pricing</h2>
           </div>
           <div className="mt-12 grid gap-8 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-2">
             <BusPackageCard />

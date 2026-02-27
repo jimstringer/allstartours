@@ -1,7 +1,7 @@
 {
-  "name": "react-ts-vite-boilerplate",
+  "name": "all-star-tours",
   "version": "1.0.0",
-  "homepage": "https://projekt8.github.io/react-ts-vite-boilerplate",
+  "homepage": "https://jimstringer.github.io/allstartours/",
   "type": "module",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "start": "react-router-serve ./build/server/index.js",
+    "start": "vite preview",
     "format": "prettier --write \"app/**/*.{ts,tsx,css}\"",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",

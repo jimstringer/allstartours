@@ -46,7 +46,7 @@ export const BusPackageCard = () => {
         </ul>
         <button
           type="button"
-          className="mt-6 w-full rounded-md bg-blue-500 px-2 py-2 text-sm font-semibold text-white hover:bg-blue-600"
+          className="mt-6 w-full rounded-md bg-bomber-gold px-2 py-2 text-sm font-semibold text-bomber-blue hover:bg-bomber-blue hover:text-bomber-gold"
           onClick={handleBookNow}
         >
           Book now
