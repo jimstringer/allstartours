@@ -21,7 +21,7 @@ export default function Book() {
         </a>
       </p>
       <div className="mt-4">
-        <div><a className='underline text-bomber-gold' href='tel:{allStarToursPhone}'>Call Us</a></div>
+        <div><a className='underline text-bomber-gold' href={'tel:' + allStarToursPhone}>Call Us</a></div>
       </div>
       <div className="mt-4">
         <p>
