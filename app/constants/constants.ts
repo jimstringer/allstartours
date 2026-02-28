@@ -6,7 +6,7 @@ These are the constants that may change year to year
 export const labourDay = { day: 7, month: 9, year: 2026 };
 //export const labourDayDate = new Date(labourDay.year, labourDay.month - 1, labourDay.day);
 export const allStarToursEmail = 'allstartours.mb@gmail.com';
-export const allStarToursPhone = '204-797-2587';
+export const allStarToursPhone = '(204) 797-2587';
 
 export const udrivePackage = {
   dualRoom: 430,
