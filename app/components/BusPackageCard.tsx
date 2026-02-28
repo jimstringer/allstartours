@@ -9,26 +9,26 @@ export const BusPackageCard = () => {
   };
 
   return (
-    <div className="rounded-md border p-6">
-      <h3 className="mb-1 text-2xl font-semibold">Bus Package</h3>
-      <p className="text-sm text-gray-500">3 days/ 2 nights</p>
+    <div className="rounded-md border text-base bg-package p-6">
+      <h3 className="mb-1 text-3xl font-semibold">Bus Package</h3>
+      <p className=" text-gray-500">3 days/ 2 nights</p>
       <div className="mt-6 rounded-md border bg-gray-100 p-4">
         <h2 className="mb-1 text-2xl font-semibold">Dual Room</h2>
         <h3 className="text-2xl font-semibold">
-          ${busPackage.dualRoom} <sub className="text-xs text-gray-400">per person</sub>
+          ${busPackage.dualRoom} <sub className="text-xl text-gray-400">per person</sub>
         </h3>
       </div>
       <div className="mt-6 rounded-md border bg-gray-100 p-4">
         <h2 className="mb-1 text-2xl font-semibold">Quad Room</h2>
         <h3 className="text-2xl font-semibold">
-          ${busPackage.quadRoom} <sub className="text-xs text-gray-400">per person</sub>
+          ${busPackage.quadRoom} <sub className="text-xl text-gray-400">per person</sub>
         </h3>
       </div>
       <div className="mt-6">
         <h4 className="mb-1 text-xl font-semibold">Includes</h4>
         <ul className="mt-6 space-y-4">
           {busPackage.include.map((item, index) => (
-            <li key={index} className="flex items-center text-sm text-gray-500">
+            <li key={index} className="flex items-center text-gray-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

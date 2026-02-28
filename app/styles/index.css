@@ -8,7 +8,8 @@
   }
 
   body {
-    @apply from-secondary m-0 bg-linear-to-br to-black p-0 font-sans font-light text-white;
+    /* @apply from-bggrad-start m-0 bg-linear-to-br to-black p-0 font-sans font-light text-white; */
+    @apply bg-body m-0 p-0 font-sans font-light text-white;
   }
 
   h1,
