@@ -4,6 +4,9 @@ export default [
   index('routes/home.tsx'),
   route('book', 'routes/book.tsx'),
   //route('about', 'routes/about.tsx'),
-  route('waiver', 'routes/waiver.tsx'),
+  //route('waiver', 'routes/waiver.tsx'),
+  route('about', 'routes/about.tsx'),
+  route('legal', 'routes/legal.tsx'),
   route('*', 'routes/404.tsx'),
 ] satisfies RouteConfig;
+

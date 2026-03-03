@@ -37,7 +37,7 @@ export default function HomePage() {
         | Mosaic Stadium, Regina, SK
       </p>
       <p>Visit Mosaic Stadium on Labour Day for an unforgettable experience!</p>
-      <div className="font-[sans-serif] text-primary">
+      <div className="text-primary font-[sans-serif]">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <h2 className="mb-4 text-4xl font-bold">{labourDayDate.getFullYear()} Pricing</h2>

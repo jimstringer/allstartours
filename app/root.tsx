@@ -1,7 +1,7 @@
 import '@/styles/index.css';
 
-import interFont from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
-import playfairFont from '@fontsource-variable/playfair-display/files/playfair-display-latin-wght-normal.woff2?url';
+//import interFont from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+//import playfairFont from '@fontsource-variable/playfair-display/files/playfair-display-latin-wght-normal.woff2?url';
 
 import {
   isRouteErrorResponse,
@@ -14,12 +14,13 @@ import {
 } from 'react-router';
 import type { Route } from './+types/root';
 
-import { Navbar } from '@/components/Navbar';
+//import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/Button';
+import SiteHeader from './components/siteheader';
 
 export const links: Route.LinksFunction = () => [
-  {
+  /* {
     rel: 'preload',
     href: interFont,
     as: 'font',
@@ -32,7 +33,7 @@ export const links: Route.LinksFunction = () => [
     as: 'font',
     type: 'font/woff2',
     crossOrigin: 'anonymous',
-  },
+  }, */
   {
     rel: 'icon',
     href: 'favicon.png',
@@ -55,8 +56,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="grid min-h-dvh grid-rows-[auto_1fr_auto]">
-        <Navbar />
-        <main className="grid items-center gap-20 py-12 md:py-24">{children}</main>
+        <SiteHeader />
+        <main className="bg-body grid items-center gap-20 py-12 md:py-24">{children}</main>
         <Footer />
 
         <ScrollRestoration />

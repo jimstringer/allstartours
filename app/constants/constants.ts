@@ -34,3 +34,10 @@ export const busPackage = {
     'promo grab bag',
   ],
 };
+
+export const navLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'Book', href: '/book' },
+  { name: 'About', href: '/about' },
+  { name: 'Legal', href: '/legal' },
+];

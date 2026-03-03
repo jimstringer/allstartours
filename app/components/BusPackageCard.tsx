@@ -9,9 +9,9 @@ export const BusPackageCard = () => {
   };
 
   return (
-    <div className="rounded-md border text-base bg-package p-6">
+    <div className="bg-package rounded-md border p-6 text-base">
       <h3 className="mb-1 text-3xl font-semibold">Bus Package</h3>
-      <p className=" text-gray-500">3 days/ 2 nights</p>
+      <p className="text-gray-500">3 days/ 2 nights</p>
       <div className="mt-6 rounded-md border bg-gray-100 p-4">
         <h2 className="mb-1 text-2xl font-semibold">Dual Room</h2>
         <h3 className="text-2xl font-semibold">
@@ -46,7 +46,7 @@ export const BusPackageCard = () => {
         </ul>
         <button
           type="button"
-          className="mt-6 w-full rounded-md bg-bomber-gold px-2 py-2 text-sm font-semibold text-bomber-blue hover:bg-bomber-blue hover:text-bomber-gold"
+          className="bg-bomber-gold text-bomber-blue hover:bg-bomber-blue hover:text-bomber-gold mt-6 w-full rounded-md px-2 py-2 text-sm font-semibold"
           onClick={handleBookNow}
         >
           Book now

@@ -1,7 +1,7 @@
 @theme {
   /* Typography */
   --font-sans: 'Inter', system-ui, sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-serif: 'Noto', serif;
 
   /* Colors */
   --color-primary: #9b8449;
@@ -10,6 +10,7 @@
   --color-secondary-200: #233242;
   --color-secondary-300: #1f2c39;
   --color-secondary-400: #1a2631;
+  --color-background: #0b3865;
 
   --color-black: #0f1b27;
   --color-white: #f5fbff;
@@ -22,4 +23,6 @@
   --color-navbar: #0b3865;
   --color-body: #074787;
   --color-package: #17232b;
+
+  
 }

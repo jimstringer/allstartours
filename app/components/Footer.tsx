@@ -3,7 +3,7 @@ import { allStarToursPhone } from '@/constants/constants';
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-white/10 bg-black/70 py-12">
+    <footer className="border-t border-white/10 bg-navbar py-12">
       <div className="container mx-auto flex px-4 text-center font-serif text-xl">
         <img className="h-12 w-14 flex-none" src={AllStarLogo} alt="logo" />
         <div className="mx-auto flex flex-col sm:flex-row">
