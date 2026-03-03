@@ -2,7 +2,7 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import './theme.css';
+/*@import './theme.css'; */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -14,7 +14,7 @@
 
   body {
     /* @apply from-bggrad-start m-0 bg-linear-to-br to-black p-0 font-sans font-light text-white; */
-    @apply bg-body m-0 p-0 font-sans font-light text-white;
+    @apply  m-0 p-0 font-sans font-light text-white;
     @apply bg-background text-foreground;
   }
 
@@ -57,6 +57,35 @@
   * {
     @apply border-border outline-ring/50;
   }
+}
+
+@theme {
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Noto', serif;
+
+  /* Colors */
+  --color-primary: #9b8449;
+  --color-secondary: #2c3f52;
+  --color-secondary-100: #28394a;
+  --color-secondary-200: #233242;
+  --color-secondary-300: #1f2c39;
+  --color-secondary-400: #1a2631;
+  --color-background: #0b3865;
+
+  --color-black: #0f1b27;
+  --color-white: #f5fbff;
+  --color-success: var(--color-green-400);
+  --color-error: var(--color-red-400);
+
+  --color-bomber-blue: #1d3d7a;
+  --color-bomber-gold: #9b8449;
+  --color-sask-green: #005b3b;
+  --color-navbar: #0b3865;
+  --color-body: #074787;
+  --color-package: #08161f;
+
+  
 }
 
 @theme inline {

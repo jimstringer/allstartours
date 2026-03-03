@@ -9,7 +9,7 @@ export const BusPackageCard = () => {
   };
 
   return (
-    <div className="bg-package rounded-md border p-6 text-base">
+    <div className="bg-package text-bomber-gold rounded-md border p-6 text-base">
       <h3 className="mb-1 text-3xl font-semibold">Bus Package</h3>
       <p className="text-gray-500">3 days/ 2 nights</p>
       <div className="mt-6 rounded-md border bg-gray-100 p-4">

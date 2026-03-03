@@ -40,7 +40,7 @@ export default function HomePage() {
       <div className="text-primary font-[sans-serif]">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
-            <h2 className="mb-4 text-4xl font-bold">{labourDayDate.getFullYear()} Pricing</h2>
+            <h2 className="text-bomber-gold mb-4 text-4xl font-bold">{labourDayDate.getFullYear()} Pricing</h2>
           </div>
           <div className="mt-12 grid gap-8 max-sm:mx-auto max-sm:max-w-sm sm:grid-cols-2">
             <BusPackageCard />

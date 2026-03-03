@@ -31,9 +31,10 @@ export default function MobileNav() {
           <SheetTitle>Menu</SheetTitle>
           <SheetDescription></SheetDescription>
         </SheetHeader>
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start text-2xl p-2 ">
           {mobileNavItems.map((item, index) => (
             <NavLink
+              className="p-4 hover:bg-gray-100 hover:text-gray-900"
               key={index + 100}
               to={item.href}
               onClick={() => {
