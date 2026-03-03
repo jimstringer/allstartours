@@ -1,6 +1,5 @@
 import type { Route } from './+types/legal';
 import { Container } from '@/components/Container';
-import terms from '@/assets/terms.pdf';
 
 export function meta({}: Route.MetaArgs) {
   return [
